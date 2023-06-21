@@ -9,22 +9,22 @@
 /* Begin PBXBuildFile section */
 		8725C1BF2A4324C100D81326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725C1BE2A4324C100D81326 /* AppDelegate.swift */; };
 		8725C1C12A4324C100D81326 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725C1C02A4324C100D81326 /* SceneDelegate.swift */; };
-		8725C1C32A4324C100D81326 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725C1C22A4324C100D81326 /* ViewController.swift */; };
 		8725C1C82A4324C100D81326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8725C1C72A4324C100D81326 /* Assets.xcassets */; };
 		8725C1CB2A4324C100D81326 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8725C1C92A4324C100D81326 /* LaunchScreen.storyboard */; };
 		875BF68F2A432F8100225327 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF68E2A432F8100225327 /* Modules */; };
 		875BF6922A43316F00225327 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF6912A43316F00225327 /* DGCharts */; };
+		875BF6972A43479B00225327 /* MyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875BF6962A43479B00225327 /* MyWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8725C1BB2A4324C100D81326 /* GoWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8725C1BE2A4324C100D81326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8725C1C02A4324C100D81326 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8725C1C22A4324C100D81326 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8725C1C72A4324C100D81326 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8725C1CA2A4324C100D81326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8725C1CC2A4324C100D81326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		875BF68C2A432EF100225327 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = "<group>"; };
+		875BF6962A43479B00225327 /* MyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +61,9 @@
 		8725C1BD2A4324C100D81326 /* GoWeather */ = {
 			isa = PBXGroup;
 			children = (
+				875BF6952A43478600225327 /* Targets */,
 				8725C1BE2A4324C100D81326 /* AppDelegate.swift */,
 				8725C1C02A4324C100D81326 /* SceneDelegate.swift */,
-				8725C1C22A4324C100D81326 /* ViewController.swift */,
 				8725C1C72A4324C100D81326 /* Assets.xcassets */,
 				8725C1C92A4324C100D81326 /* LaunchScreen.storyboard */,
 				8725C1CC2A4324C100D81326 /* Info.plist */,
@@ -76,6 +76,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		875BF6952A43478600225327 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				875BF6962A43479B00225327 /* MyWeather.swift */,
+			);
+			path = Targets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8725C1C32A4324C100D81326 /* ViewController.swift in Sources */,
+				875BF6972A43479B00225327 /* MyWeather.swift in Sources */,
 				8725C1BF2A4324C100D81326 /* AppDelegate.swift in Sources */,
 				8725C1C12A4324C100D81326 /* SceneDelegate.swift in Sources */,
 			);

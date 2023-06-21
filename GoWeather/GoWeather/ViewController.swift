@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import Modules
+import Weather
+import DGCharts
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .blue
         let modules = Modules()
         print(modules.text)
-        
+    
     }
 
 
