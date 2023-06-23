@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8725C1BB2A4324C100D81326 /* GoWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8725C1BB2A4324C100D81326 /* MyWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8725C1BE2A4324C100D81326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8725C1C02A4324C100D81326 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8725C1C72A4324C100D81326 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,8 +35,8 @@
 		875BF68C2A432EF100225327 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = "<group>"; };
 		875BF6982A445C8300225327 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = "<group>"; };
 		875BF69B2A4468A600225327 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponents; sourceTree = "<group>"; };
-		875BF6B32A45C45600225327 /* GoWeatherFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoWeatherFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		875BF6B42A45C45600225327 /* GoWeatherFree-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoWeatherFree-Info.plist"; path = "/Users/grigorii/itmo/yandex/GoInternTest/GoInternship-Weather/GoWeather/GoWeatherFree-Info.plist"; sourceTree = "<absolute>"; };
+		875BF6B32A45C45600225327 /* MyWeatherFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeatherFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		875BF6B42A45C45600225327 /* MyWeatherFree-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyWeatherFree-Info.plist"; path = "/Users/grigorii/itmo/yandex/GoInternTest/GoInternship-Weather/GoWeather/MyWeatherFree-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,15 +73,15 @@
 				875BF68C2A432EF100225327 /* Modules */,
 				8725C1BD2A4324C100D81326 /* GoWeather */,
 				8725C1BC2A4324C100D81326 /* Products */,
-				875BF6B42A45C45600225327 /* GoWeatherFree-Info.plist */,
+				875BF6B42A45C45600225327 /* MyWeatherFree-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		8725C1BC2A4324C100D81326 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8725C1BB2A4324C100D81326 /* GoWeather.app */,
-				875BF6B32A45C45600225327 /* GoWeatherFree.app */,
+				8725C1BB2A4324C100D81326 /* MyWeather.app */,
+				875BF6B32A45C45600225327 /* MyWeatherFree.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8725C1BA2A4324C100D81326 /* GoWeather */ = {
+		8725C1BA2A4324C100D81326 /* MyWeather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8725C1CF2A4324C100D81326 /* Build configuration list for PBXNativeTarget "GoWeather" */;
+			buildConfigurationList = 8725C1CF2A4324C100D81326 /* Build configuration list for PBXNativeTarget "MyWeather" */;
 			buildPhases = (
 				8725C1B72A4324C100D81326 /* Sources */,
 				8725C1B82A4324C100D81326 /* Frameworks */,
@@ -113,7 +113,7 @@
 			);
 			dependencies = (
 			);
-			name = GoWeather;
+			name = MyWeather;
 			packageProductDependencies = (
 				875BF68E2A432F8100225327 /* Modules */,
 				875BF6912A43316F00225327 /* DGCharts */,
@@ -121,12 +121,12 @@
 				875BF69C2A446A4300225327 /* UIComponents */,
 			);
 			productName = GoWeather;
-			productReference = 8725C1BB2A4324C100D81326 /* GoWeather.app */;
+			productReference = 8725C1BB2A4324C100D81326 /* MyWeather.app */;
 			productType = "com.apple.product-type.application";
 		};
-		875BF69E2A45C45600225327 /* GoWeatherFree */ = {
+		875BF69E2A45C45600225327 /* MyWeatherFree */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 875BF6B02A45C45600225327 /* Build configuration list for PBXNativeTarget "GoWeatherFree" */;
+			buildConfigurationList = 875BF6B02A45C45600225327 /* Build configuration list for PBXNativeTarget "MyWeatherFree" */;
 			buildPhases = (
 				875BF6A42A45C45600225327 /* Sources */,
 				875BF6A82A45C45600225327 /* Frameworks */,
@@ -136,7 +136,7 @@
 			);
 			dependencies = (
 			);
-			name = GoWeatherFree;
+			name = MyWeatherFree;
 			packageProductDependencies = (
 				875BF69F2A45C45600225327 /* Modules */,
 				875BF6A02A45C45600225327 /* DGCharts */,
@@ -144,7 +144,7 @@
 				875BF6A32A45C45600225327 /* UIComponents */,
 			);
 			productName = GoWeather;
-			productReference = 875BF6B32A45C45600225327 /* GoWeatherFree.app */;
+			productReference = 875BF6B32A45C45600225327 /* MyWeatherFree.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -178,8 +178,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8725C1BA2A4324C100D81326 /* GoWeather */,
-				875BF69E2A45C45600225327 /* GoWeatherFree */,
+				8725C1BA2A4324C100D81326 /* MyWeather */,
+				875BF69E2A45C45600225327 /* MyWeatherFree */,
 			);
 		};
 /* End PBXProject section */
@@ -414,7 +414,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "GoWeatherFree-Info.plist";
+				INFOPLIST_FILE = "MyWeatherFree-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -442,7 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "GoWeatherFree-Info.plist";
+				INFOPLIST_FILE = "MyWeatherFree-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -474,7 +474,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8725C1CF2A4324C100D81326 /* Build configuration list for PBXNativeTarget "GoWeather" */ = {
+		8725C1CF2A4324C100D81326 /* Build configuration list for PBXNativeTarget "MyWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8725C1D02A4324C100D81326 /* Debug */,
@@ -483,7 +483,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		875BF6B02A45C45600225327 /* Build configuration list for PBXNativeTarget "GoWeatherFree" */ = {
+		875BF6B02A45C45600225327 /* Build configuration list for PBXNativeTarget "MyWeatherFree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				875BF6B12A45C45600225327 /* Debug */,
