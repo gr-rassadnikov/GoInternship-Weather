@@ -1,6 +1,6 @@
 import Foundation
-import Weather
 import UIKit
+import Weather
 
 final class MyWeather {
     let weatherVC = WeatherViewController()

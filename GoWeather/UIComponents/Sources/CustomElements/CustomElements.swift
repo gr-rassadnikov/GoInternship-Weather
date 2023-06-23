@@ -1,9 +1,8 @@
 import Foundation
 import UIKit
 
-public struct CustomElements {
-    
-    public struct Buttons {
+public enum CustomElements {
+    public enum Buttons {
         public static let update: UIButton = {
             let button = UIButton()
             button.translatesAutoresizingMaskIntoConstraints = false
@@ -18,9 +17,8 @@ public struct CustomElements {
             return button
         }()
     }
-    
-    public struct Labels {
-        
+
+    public enum Labels {
         public static let date: UILabel = {
             let label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
@@ -28,7 +26,7 @@ public struct CustomElements {
             label.textColor = UIColor(named: "currentDateColor")
             return label
         }()
-        
+
         public static let temp: UILabel = {
             let label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
@@ -37,8 +35,8 @@ public struct CustomElements {
             return label
         }()
     }
-    
-    public struct Images {
+
+    public enum Images {
         public static let icon: UIImageView = {
             let imageView = UIImageView()
             imageView.translatesAutoresizingMaskIntoConstraints = false
