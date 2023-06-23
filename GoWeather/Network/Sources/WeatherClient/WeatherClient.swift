@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 public class WeatherClient {
     
@@ -33,5 +34,9 @@ public class WeatherClient {
             (x: 22, y: 14),
             (x: 23, y: 14),
         ])
+    }
+    
+    public func getImage() -> UIImage? {
+        return UIImage(named: "moonImage")
     }
 }
