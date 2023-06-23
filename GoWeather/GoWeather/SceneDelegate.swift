@@ -1,4 +1,6 @@
 import UIKit
+import Modules
+import Weather
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
@@ -7,9 +9,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo _: UISceneSession, options _: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-
-        target = MyWeather(window: window)
-        target?.start()
+        window.rootViewController = WeatherViewController()
+        window.makeKeyAndVisible()
+        self.window = window
+        
+        #if Free
+            print("Run Free version")
+        #else
+            print("Run Base version")
+        #endif
     }
 
     func sceneDidDisconnect(_: UIScene) {}

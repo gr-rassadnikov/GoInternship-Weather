@@ -16,6 +16,15 @@
 		875BF6972A43479B00225327 /* MyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875BF6962A43479B00225327 /* MyWeather.swift */; };
 		875BF69A2A44627900225327 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF6992A44627900225327 /* Network */; };
 		875BF69D2A446A4300225327 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF69C2A446A4300225327 /* UIComponents */; };
+		875BF6A52A45C45600225327 /* MyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875BF6962A43479B00225327 /* MyWeather.swift */; };
+		875BF6A62A45C45600225327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725C1BE2A4324C100D81326 /* AppDelegate.swift */; };
+		875BF6A72A45C45600225327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725C1C02A4324C100D81326 /* SceneDelegate.swift */; };
+		875BF6A92A45C45600225327 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF6A32A45C45600225327 /* UIComponents */; };
+		875BF6AA2A45C45600225327 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF6A22A45C45600225327 /* Network */; };
+		875BF6AB2A45C45600225327 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF6A02A45C45600225327 /* DGCharts */; };
+		875BF6AC2A45C45600225327 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF69F2A45C45600225327 /* Modules */; };
+		875BF6AE2A45C45600225327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8725C1C92A4324C100D81326 /* LaunchScreen.storyboard */; };
+		875BF6AF2A45C45600225327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8725C1C72A4324C100D81326 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +38,8 @@
 		875BF6962A43479B00225327 /* MyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeather.swift; sourceTree = "<group>"; };
 		875BF6982A445C8300225327 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = "<group>"; };
 		875BF69B2A4468A600225327 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponents; sourceTree = "<group>"; };
+		875BF6B32A45C45600225327 /* GoWeatherFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoWeatherFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		875BF6B42A45C45600225327 /* GoWeatherFree-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoWeatherFree-Info.plist"; path = "/Users/grigorii/itmo/yandex/GoInternTest/GoInternship-Weather/GoWeather/GoWeatherFree-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +51,17 @@
 				875BF69A2A44627900225327 /* Network in Frameworks */,
 				875BF6922A43316F00225327 /* DGCharts in Frameworks */,
 				875BF68F2A432F8100225327 /* Modules in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		875BF6A82A45C45600225327 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875BF6A92A45C45600225327 /* UIComponents in Frameworks */,
+				875BF6AA2A45C45600225327 /* Network in Frameworks */,
+				875BF6AB2A45C45600225327 /* DGCharts in Frameworks */,
+				875BF6AC2A45C45600225327 /* Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +77,7 @@
 				8725C1BD2A4324C100D81326 /* GoWeather */,
 				8725C1BC2A4324C100D81326 /* Products */,
 				875BF68D2A432F7D00225327 /* Frameworks */,
+				875BF6B42A45C45600225327 /* GoWeatherFree-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				8725C1BB2A4324C100D81326 /* GoWeather.app */,
+				875BF6B32A45C45600225327 /* GoWeatherFree.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +144,29 @@
 			productReference = 8725C1BB2A4324C100D81326 /* GoWeather.app */;
 			productType = "com.apple.product-type.application";
 		};
+		875BF69E2A45C45600225327 /* GoWeatherFree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 875BF6B02A45C45600225327 /* Build configuration list for PBXNativeTarget "GoWeatherFree" */;
+			buildPhases = (
+				875BF6A42A45C45600225327 /* Sources */,
+				875BF6A82A45C45600225327 /* Frameworks */,
+				875BF6AD2A45C45600225327 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoWeatherFree;
+			packageProductDependencies = (
+				875BF69F2A45C45600225327 /* Modules */,
+				875BF6A02A45C45600225327 /* DGCharts */,
+				875BF6A22A45C45600225327 /* Network */,
+				875BF6A32A45C45600225327 /* UIComponents */,
+			);
+			productName = GoWeather;
+			productReference = 875BF6B32A45C45600225327 /* GoWeatherFree.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				8725C1BA2A4324C100D81326 /* GoWeather */,
+				875BF69E2A45C45600225327 /* GoWeatherFree */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +214,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		875BF6AD2A45C45600225327 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875BF6AE2A45C45600225327 /* LaunchScreen.storyboard in Resources */,
+				875BF6AF2A45C45600225327 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -176,6 +233,16 @@
 				875BF6972A43479B00225327 /* MyWeather.swift in Sources */,
 				8725C1BF2A4324C100D81326 /* AppDelegate.swift in Sources */,
 				8725C1C12A4324C100D81326 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		875BF6A42A45C45600225327 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875BF6A52A45C45600225327 /* MyWeather.swift in Sources */,
+				875BF6A62A45C45600225327 /* AppDelegate.swift in Sources */,
+				875BF6A72A45C45600225327 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +428,62 @@
 			};
 			name = Release;
 		};
+		875BF6B12A45C45600225327 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoWeatherFree-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-D Free";
+				PRODUCT_BUNDLE_IDENTIFIER = "gr-rassadnikor.GoWeather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		875BF6B22A45C45600225327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoWeatherFree-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-D Free";
+				PRODUCT_BUNDLE_IDENTIFIER = "gr-rassadnikor.GoWeather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -382,10 +505,27 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		875BF6B02A45C45600225327 /* Build configuration list for PBXNativeTarget "GoWeatherFree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				875BF6B12A45C45600225327 /* Debug */,
+				875BF6B22A45C45600225327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		875BF6902A43316F00225327 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		875BF6A12A45C45600225327 /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts.git";
 			requirement = {
@@ -410,6 +550,23 @@
 			productName = Network;
 		};
 		875BF69C2A446A4300225327 /* UIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIComponents;
+		};
+		875BF69F2A45C45600225327 /* Modules */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Modules;
+		};
+		875BF6A02A45C45600225327 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 875BF6A12A45C45600225327 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		875BF6A22A45C45600225327 /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Network;
+		};
+		875BF6A32A45C45600225327 /* UIComponents */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UIComponents;
 		};
