@@ -9,7 +9,7 @@ import CustomElements
 public class WeatherViewController: UIViewController, ChartViewDelegate {
     
     private let client = WeatherClient()
-    private var state: State?
+    private var weatherInfo: WeatherInfo?
     
     private lazy var lineChartView: LineChartView = {
        let chartView = LineChartView()
@@ -28,8 +28,6 @@ public class WeatherViewController: UIViewController, ChartViewDelegate {
         chartView.xAxis.axisLineColor = DesignConstants.Color.axisCharts
         chartView.xAxis.labelTextColor = DesignConstants.Color.axisCharts
         
-        chartView.animate(xAxisDuration: 2.5)
-        
         return chartView
     }()
     
@@ -41,7 +39,7 @@ public class WeatherViewController: UIViewController, ChartViewDelegate {
     public override func loadView() {
         super.loadView()
         
-        state = State(from: client.getRequest())
+        weatherInfo = WeatherInfo(from: client.getWeatherInfo())
         configureIconImageView()
     }
     
@@ -53,6 +51,7 @@ public class WeatherViewController: UIViewController, ChartViewDelegate {
        
        configureView()
        configureDateLabel()
+       configureTempLabel()
        configureLineChartView()
        configureUpdateButton()
     }
@@ -97,11 +96,17 @@ public class WeatherViewController: UIViewController, ChartViewDelegate {
     }
     
     private func configureView() {
-        view.backgroundColor = DesignConstants.Color.backgroundColor
+        view.backgroundColor = DesignConstants.Color.background
+    }
+    
+    private func configureTempLabel() {
+        guard let weatherInfo = weatherInfo else {return}
+        let currentTemp = weatherInfo.currentTemp
+        tempLabel.text = "\(currentTemp > 0 ? "+" : "")\(currentTemp)"
     }
     
     private func configureDateLabel() {
-        dateLabel.text = dateToString(date: state?.date)
+        dateLabel.text = dateToString(date: weatherInfo?.date)
     }
     
     private func dateToString(date: Date?) -> String{
@@ -110,15 +115,12 @@ public class WeatherViewController: UIViewController, ChartViewDelegate {
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm:ss, dd.MM.yyyy"
         
-        let myString = formatter.string(from: date)
-    
-        print("-D: date = \(myString)")
-        return myString
+        return formatter.string(from: date)
         
     }
     
     private func configureIconImageView() {
-        iconImageView.image = client.getImage()
+        iconImageView.image = client.getIconImage()
     }
     
     private func configureUpdateButton() {
@@ -126,26 +128,25 @@ public class WeatherViewController: UIViewController, ChartViewDelegate {
     }
     
     @objc private func didTapUpdateButton() {
-        state = State(from: client.getRequest())
+        weatherInfo = WeatherInfo(from: client.getWeatherInfo())
         configureDateLabel()
+        configureTempLabel()
         configureLineChartView()
     }
     
     private func configureLineChartView() {
-        let lineChartDataSet = LineChartDataSet(entries: state!.charts, label: "Температура")
+        let lineChartDataSet = LineChartDataSet(entries: weatherInfo!.charts, label: "Температура")
         lineChartDataSet.drawCirclesEnabled = false
 //        lineChartDataSet.valueFont = .boldSystemFont(ofSize: 20)
         lineChartDataSet.lineWidth = 3
-        lineChartDataSet.setColor(DesignConstants.Color.yellow ?? .yellow)
+        lineChartDataSet.setColor(DesignConstants.Color.lineChart)
         
         let lineChartData = LineChartData(dataSet: lineChartDataSet)
         lineChartData.setDrawValues(false)
         
         lineChartView.data = lineChartData
-    }
-    
-    public func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
-        print(entry)
+        
+        lineChartView.animate(xAxisDuration: 1.8)
     }
     
 }

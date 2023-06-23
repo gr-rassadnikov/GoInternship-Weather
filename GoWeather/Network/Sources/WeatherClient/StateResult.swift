@@ -1,6 +1,6 @@
 import Foundation
 
 public struct StateResult {
-    public var date: Date
-    public var charts: [(x: Double, y: Double)]
+    public private (set) var date: Date
+    public private (set) var charts: [(x: Double, y: Double)]
 }
