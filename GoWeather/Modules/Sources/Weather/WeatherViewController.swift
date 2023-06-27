@@ -129,7 +129,7 @@ public class WeatherViewController: UIViewController, ChartViewDelegate {
     }
 
     private func configureLineChartView() {
-        let lineChartDataSet = LineChartDataSet(entries: weatherInfo!.charts, label: "Температура")
+        let lineChartDataSet = LineChartDataSet(entries: weatherInfo?.charts ?? [], label: "Температура")
         lineChartDataSet.drawCirclesEnabled = false
         lineChartDataSet.lineWidth = 3
         lineChartDataSet.setColor(DesignConstants.Color.lineChart)

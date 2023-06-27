@@ -12,6 +12,14 @@ let package = Package(
             name: "UIComponents",
             targets: ["CustomElements", "DesignConstants"]
         ),
+        .library(
+            name: "CustomElements",
+            targets: ["CustomElements"]
+        ),
+        .library(
+            name: "DesignConstants",
+            targets: ["DesignConstants"]
+        ),
     ],
     dependencies: [],
     targets: [

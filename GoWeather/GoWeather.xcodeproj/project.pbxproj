@@ -12,14 +12,8 @@
 		8725C1C82A4324C100D81326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8725C1C72A4324C100D81326 /* Assets.xcassets */; };
 		8725C1CB2A4324C100D81326 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8725C1C92A4324C100D81326 /* LaunchScreen.storyboard */; };
 		875BF68F2A432F8100225327 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF68E2A432F8100225327 /* Modules */; };
-		875BF6922A43316F00225327 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF6912A43316F00225327 /* DGCharts */; };
-		875BF69A2A44627900225327 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF6992A44627900225327 /* Network */; };
-		875BF69D2A446A4300225327 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF69C2A446A4300225327 /* UIComponents */; };
 		875BF6A62A45C45600225327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725C1BE2A4324C100D81326 /* AppDelegate.swift */; };
 		875BF6A72A45C45600225327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725C1C02A4324C100D81326 /* SceneDelegate.swift */; };
-		875BF6A92A45C45600225327 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF6A32A45C45600225327 /* UIComponents */; };
-		875BF6AA2A45C45600225327 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF6A22A45C45600225327 /* Network */; };
-		875BF6AB2A45C45600225327 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF6A02A45C45600225327 /* DGCharts */; };
 		875BF6AC2A45C45600225327 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 875BF69F2A45C45600225327 /* Modules */; };
 		875BF6AE2A45C45600225327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8725C1C92A4324C100D81326 /* LaunchScreen.storyboard */; };
 		875BF6AF2A45C45600225327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8725C1C72A4324C100D81326 /* Assets.xcassets */; };
@@ -44,9 +38,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				875BF69D2A446A4300225327 /* UIComponents in Frameworks */,
-				875BF69A2A44627900225327 /* Network in Frameworks */,
-				875BF6922A43316F00225327 /* DGCharts in Frameworks */,
 				875BF68F2A432F8100225327 /* Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,9 +46,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				875BF6A92A45C45600225327 /* UIComponents in Frameworks */,
-				875BF6AA2A45C45600225327 /* Network in Frameworks */,
-				875BF6AB2A45C45600225327 /* DGCharts in Frameworks */,
 				875BF6AC2A45C45600225327 /* Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,9 +104,6 @@
 			name = MyWeather;
 			packageProductDependencies = (
 				875BF68E2A432F8100225327 /* Modules */,
-				875BF6912A43316F00225327 /* DGCharts */,
-				875BF6992A44627900225327 /* Network */,
-				875BF69C2A446A4300225327 /* UIComponents */,
 			);
 			productName = GoWeather;
 			productReference = 8725C1BB2A4324C100D81326 /* MyWeather.app */;
@@ -139,9 +124,6 @@
 			name = MyWeatherFree;
 			packageProductDependencies = (
 				875BF69F2A45C45600225327 /* Modules */,
-				875BF6A02A45C45600225327 /* DGCharts */,
-				875BF6A22A45C45600225327 /* Network */,
-				875BF6A32A45C45600225327 /* UIComponents */,
 			);
 			productName = GoWeather;
 			productReference = 875BF6B32A45C45600225327 /* MyWeatherFree.app */;
@@ -172,7 +154,6 @@
 			);
 			mainGroup = 8725C1B22A4324C100D81326;
 			packageReferences = (
-				875BF6902A43316F00225327 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 8725C1BC2A4324C100D81326 /* Products */;
 			projectDirPath = "";
@@ -374,6 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gr-rassadnikor.GoWeather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -401,6 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gr-rassadnikor.GoWeather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -429,6 +412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gr-rassadnikor.GoWeather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,6 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "gr-rassadnikor.GoWeather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,59 +479,14 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		875BF6902A43316F00225327 /* XCRemoteSwiftPackageReference "Charts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielgindi/Charts.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		875BF6A12A45C45600225327 /* XCRemoteSwiftPackageReference "Charts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielgindi/Charts.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
 		875BF68E2A432F8100225327 /* Modules */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Modules;
 		};
-		875BF6912A43316F00225327 /* DGCharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 875BF6902A43316F00225327 /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = DGCharts;
-		};
-		875BF6992A44627900225327 /* Network */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Network;
-		};
-		875BF69C2A446A4300225327 /* UIComponents */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = UIComponents;
-		};
 		875BF69F2A45C45600225327 /* Modules */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Modules;
-		};
-		875BF6A02A45C45600225327 /* DGCharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 875BF6A12A45C45600225327 /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = DGCharts;
-		};
-		875BF6A22A45C45600225327 /* Network */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Network;
-		};
-		875BF6A32A45C45600225327 /* UIComponents */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = UIComponents;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

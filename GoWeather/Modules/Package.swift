@@ -13,15 +13,25 @@ let package = Package(
             targets: ["Weather", "DomainModels"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/danielgindi/Charts", from: "5.0.0"),
+        .package(path: "Network"),
+        .package(path: "UIComponents"),
+    ],
     targets: [
         .target(
             name: "Weather",
-            dependencies: ["DomainModels"]
+            dependencies: ["DomainModels",
+                           .product(name: "WeatherClient", package: "Network"),
+                           .product(name: "CustomElements", package: "UIComponents"),
+                           .product(name: "DesignConstants", package: "UIComponents"),
+                          ]
         ),
         .target(
             name: "DomainModels",
-            dependencies: []
+            dependencies: [
+                .product(name: "WeatherClient", package: "Network"),
+            ]
         ),
     ]
 )

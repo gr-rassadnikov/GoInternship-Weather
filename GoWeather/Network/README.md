@@ -1,3 +1,3 @@
 # Network
 
-A description of this package.
+A package that works with the network and gives data for the domain models

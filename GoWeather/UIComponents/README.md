@@ -1,3 +1,3 @@
 # UIComponents
 
-A description of this package.
+A package with UI elements and constants for design

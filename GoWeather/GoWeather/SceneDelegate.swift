@@ -1,5 +1,4 @@
 import UIKit
-import Modules
 import Weather
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

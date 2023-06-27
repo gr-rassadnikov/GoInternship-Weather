@@ -12,6 +12,10 @@ let package = Package(
             name: "Network",
             targets: ["WeatherClient"]
         ),
+        .library(
+            name: "WeatherClient",
+            targets: ["WeatherClient"]
+        ),
     ],
     dependencies: [],
     targets: [
